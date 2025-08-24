@@ -16,17 +16,18 @@
     <div class="container nav">
       <a class="brand" href="#">✈ FlyEase</a>
       <nav class="nav-links">
-        <a href="#search">Book</a>
+        <a href="#home">Home</a>
+        <a href="#book">Book</a>
         <a href="#schedule">Schedules</a>
         <a href="#destinations">Destinations</a>
         <a href="#portal">Passenger Portal</a>
-        <a class="cta" href="#">Check-in</a>
+        <a href="#checkin" class="Check-in">Check-in</a>  
       </nav>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
+  <!-- FULLSCREEN HERO -->
+  <section id="home" class="hero full-hero">
     <video autoplay muted loop id="video-bg">
       <source src="assets/airplane.mp4" type="video/mp4">
     </video>
@@ -34,13 +35,31 @@
     <div class="container hero-content">
       <h1>Your Journey, Our Priority</h1>
       <p>Book, manage, and fly with ease. Experience travel the modern way.</p>
-      <a href="#search" class="btn primary">Search Flights</a>
     </div>
   </section>
 
-  <!-- SEARCH BOX -->
-  <section id="search" class="search-section">
-    <div class="container">
+ <!-- WHY FLYEASE + BOOKING -->
+<section id="book" class="full-section transparent-bg">
+  <div class="container book-grid">
+    
+    <!-- Left Content -->
+    <div class="book-info">
+      <h2>Why FlyEase?</h2>
+      <p>
+        ✈ FlyEase makes air travel simple and convenient.<br><br>
+        From <b>easy bookings</b> to <b>real-time updates</b>,  
+        we ensure comfort, punctuality, and a seamless flying experience.<br><br>
+        Travel smarter. Travel with FlyEase.
+      </p>
+
+      <!-- Library Image Placeholder -->
+      <div class="library">
+        <img src="assets/library.png" alt="FlyEase Library">
+      </div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="book-form">
       <div class="tabs">
         <span class="tab active">One Way</span>
         <span class="tab">Round Trip</span>
@@ -65,19 +84,26 @@
         </div>
         <div class="field">
           <label>Passengers</label>
-          <select><option>1 Adult</option><option>2 Adults</option></select>
+          <select>
+            <option>1 Adult</option>
+            <option>2 Adults</option>
+          </select>
         </div>
         <div class="field">
           <label>Class</label>
-          <select><option>Economy</option><option>Business</option></select>
+          <select>
+            <option>Economy</option>
+            <option>Business</option>
+          </select>
         </div>
         <button class="btn primary">Search</button>
       </form>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- SCHEDULES -->
-  <section id="schedule" class="section">
+  <section id="schedule" class="section full-section">
     <div class="container">
       <h2>Today's Flights</h2>
       <div class="cards">
@@ -98,7 +124,7 @@
   </section>
 
   <!-- DESTINATIONS -->
-  <section id="destinations" class="section">
+  <section id="destinations" class="section full-section">
     <div class="container">
       <h2>Trending Destinations</h2>
       <div class="tiles">
@@ -119,7 +145,7 @@
   </section>
 
   <!-- PORTAL -->
-  <section id="portal" class="section portal">
+  <section id="portal" class="section portal full-section">
     <div class="container portal-grid">
       <div>
         <h2>Passenger Portal</h2>
