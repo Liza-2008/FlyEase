@@ -1,3 +1,73 @@
+
+/* Background with airplane image */
+body {
+  font-family: 'Inter', sans-serif;
+  background: url('https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?q=80&w=1600&auto=format&fit=crop')
+              no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+/* Transparent overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.flight-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.flight-card:hover {
+  transform: scale(1.05);
+}
+
+.flight-card h2 {
+  margin: 0 0 10px;
+  color: #ffcc00; /* highlight color */
+}
+
+.flight-card p {
+  margin: 5px 0;
+}
+
+button {
+  background: #ffcc00;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #e6b800;
+=======
 :root {
   --primary: #0a1a3a;
   --accent: #3a7bd5;
