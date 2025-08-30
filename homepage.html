@@ -11,6 +11,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 <!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
@@ -34,6 +35,24 @@
 </header>
 
   <!-- HERO -->
+=======
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-brand" href="#">✈ FlyEase</a>
+      <nav class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#book">Book</a>
+        <a href="#schedule">Schedules</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#portal">Passenger Portal</a>
+        <a href="#checkin" class="Check-in">Check-in</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+>>>>>>> main
   <section id="home" class="hero full-hero">
     <video autoplay muted loop id="video-bg">
       <source src="assets/airplane.mp4" type="video/mp4">
@@ -45,10 +64,16 @@
     </div>
   </section>
 
+<<<<<<< HEAD
   <!-- WHY FLYEASE + BOOKING -->
   <section id="book" class="full-section transparent-bg">
     <div class="container book-grid">
       
+=======
+  <!-- ================= WHY FLYEASE + BOOKING ================= -->
+  <section id="book" class="full-section transparent-bg">
+    <div class="container book-grid">
+>>>>>>> main
       <!-- Left Content -->
       <div class="book-info">
         <h2>Why FlyEase?</h2>
@@ -58,6 +83,7 @@
           we ensure comfort, punctuality, and a seamless flying experience.<br><br>
           Travel smarter. Travel with FlyEase.
         </p>
+<<<<<<< HEAD
       </div>
 
       <!-- Right Content -->
@@ -270,9 +296,246 @@
           <div class="caption">Tokyo</div>
         </div>
       </div>
+=======
+      </div>
+      <!-- Right Content -->
+       <div class="bg-container" id="book">
+  <div class="transparent-bg">
+      <div class="book-form">
+        <div class="tabs">
+          <span class="tab active">One Way</span>
+          <span class="tab">Round Trip</span>
+          <span class="tab">Multi-City</span>
+        </div>
+        
+        <form id="searchForm" class="search-form">
+          <div class="field">
+            <label>From</label>
+            <input id="fromInput" type="text" placeholder="Origin">
+          </div>
+          <div class="field">
+            <label>To</label>
+            <input id="toInput" type="text" placeholder="Destination">
+          </div>
+          <div class="field">
+            <label>Depart</label>
+            <input id="departInput" type="date">
+          </div>
+          <div class="field">
+            <label>Return</label>
+            <input id="returnInput" type="date">
+          </div>
+          <div class="field">
+            <label>Passengers</label>
+            <select id="passengerInput">
+              <option>1 Adult</option>
+              <option>2 Adults</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Class</label>
+            <select id="classInput">
+              <option>Economy</option>
+              <option>Business</option>
+            </select>
+          </div>
+          <button type="submit" class="btn primary">Search</button>
+        </form>
+      </div>
     </div>
   </section>
 
+  <!-- ================= BOOKING FLOW ================= -->
+
+  <!-- STEP 2: Airline Selection -->
+  <section id="airline" class="section full-section flow-step transparent-bg">
+    <div class="container">
+      <h2>Select an Airline</h2>
+      <div class="cards airline-cards">
+        <a href="#results" class="card airline-card">Air India</a>
+        <a href="#results" class="card airline-card">SpiceJet</a>
+        <a href="#results" class="card airline-card">IndiGo</a>
+      </div>
+      <div class="flow-actions">
+        <a class="btn" href="#book">← Back</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 3: Flight Results -->
+  <section id="results" class="section full-section flow-step transparent-bg">
+    <div class="container">
+      <h2>Available Flights</h2>
+      <div class="cards flight-cards">
+        <a href="#passengers" class="card flight-card">06:20 → 08:30 • ₹ 6,499</a>
+        <a href="#passengers" class="card flight-card">07:45 → 10:05 • ₹ 5,999</a>
+        <a href="#passengers" class="card flight-card">09:10 → 11:20 • ₹ 6,199</a>
+      </div>
+      <div class="flow-actions">
+        <a class="btn" href="#airline">← Back</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 4: Passenger Details -->
+  <section id="passengers" class="section full-section flow-step transparent-bg">
+    <div class="container">
+      <h2>Passenger Details</h2>
+      <form class="stack-form">
+        <div class="two-col">
+          <div class="field">
+            <label>Full Name</label>
+            <input type="text" placeholder="Riya Sharma">
+          </div>
+          <div class="field">
+            <label>Gender</label>
+            <select>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="two-col">
+          <div class="field">
+            <label>Age</label>
+            <input type="number" placeholder="28">
+          </div>
+          <div class="field">
+            <label>Seat Preference</label>
+            <select>
+              <option>Window</option>
+              <option>Aisle</option>
+            </select>
+          </div>
+        </div>
+      </form>
+      <div class="flow-actions">
+        <a class="btn" href="#results">← Back</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 5: Payment -->
+  <section id="payment" class="section full-section flow-step transparent-bg">
+    <div class="container">
+      <h2>Payment</h2>
+      <div class="cards payment-grid">
+        <div class="card">
+          <h3>Booking Summary</h3>
+          <p id="summaryText">Your booking summary will appear here.</p>
+        </div>
+        <div class="card">
+          <h3>Payment Method</h3>
+          <form class="stack-form">
+            <div class="field">
+              <label>Mode</label>
+              <select>
+                <option>Credit Card</option>
+                <option>UPI</option>
+                <option>Net Banking</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="flow-actions">
+        <a class="btn" href="#passengers">← Back</a>
+        <a class="btn primary" href="#confirm">Pay & Confirm</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 6: Confirmation -->
+  <section id="confirm" class="section full-section flow-step transparent-bg">
+    <div class="container">
+      <h2>Booking Confirmed 🎉</h2>
+      <div class="card">
+        <p id="confirmText">Your confirmation will appear here.</p>
+        <div class="flow-actions">
+          <a class="btn" href="#">Download Ticket (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SCHEDULE SECTION ================= -->
+<section id="schedule" class="full-section">
+  <div class="container">
+    <h2>Flight Schedules</h2>
+    <p>Check upcoming flights and timings</p>
+
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>Flight No</th>
+          <th>From</th>
+          <th>To</th>
+          <th>Departure</th>
+          <th>Arrival</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AI-202</td>
+          <td>Delhi</td>
+          <td>Mumbai</td>
+          <td>07:30</td>
+          <td>09:35</td>
+          <td>On Time</td>
+        </tr>
+        <tr>
+          <td>SG-110</td>
+          <td>Bangalore</td>
+          <td>Kolkata</td>
+          <td>10:15</td>
+          <td>13:20</td>
+          <td>Delayed</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= DESTINATIONS SECTION ================= -->
+<section id="destinations" class="full-section transparent-bg">
+  <div class="container">
+    <h2>Popular Destinations</h2>
+    <div class="tiles">
+      <div class="tile">
+        <img src="assets/paris.jpg" alt="Paris">
+        <div class="caption">Paris</div>
+      </div>
+      <div class="tile">
+        <img src="assets/newyork.jpg" alt="New York">
+        <div class="caption">New York</div>
+      </div>
+      <div class="tile">
+        <img src="assets/tokyo.jpg" alt="Tokyo">
+        <div class="caption">Tokyo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PASSENGER PORTAL SECTION ================= -->
+<section id="portal" class="full-section">
+  <div class="container portal-grid">
+    <div>
+      <h2>Passenger Portal</h2>
+      <p>Manage your bookings, view itineraries, and more.</p>
+    </div>
+    <div class="login">
+      <input type="text" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button class="btn primary">Login</button>
+>>>>>>> main
+    </div>
+  </div>
+</section>
+
+<<<<<<< HEAD
   <!-- PASSENGER PORTAL -->
   <section id="portal" class="full-section">
     <div class="container portal-grid">
@@ -305,8 +568,28 @@
       </form>
     </div>
   </section>
+=======
+<!-- ================= CHECK-IN SECTION ================= -->
+<section id="checkin" class="full-section transparent-bg">
+  <div class="container">
+    <h2>Online Check-in</h2>
+    <form class="stack-form">
+      <div class="field">
+        <label>Booking Reference</label>
+        <input type="text" placeholder="Enter PNR / Booking ID">
+      </div>
+      <div class="field">
+        <label>Last Name</label>
+        <input type="text" placeholder="Enter Last Name">
+      </div>
+      <button class="btn primary">Proceed to Check-in</button>
+    </form>
+  </div>
+</section>
+>>>>>>> main
 
-  <!-- FOOTER -->
+
+  <!-- ================= FOOTER ================= -->
   <footer>
     <div class="container foot">
       <p>© 2025 FlyEase Airways</p>
