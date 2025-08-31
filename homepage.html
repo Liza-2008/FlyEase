@@ -12,21 +12,23 @@
 <body>
 
   <!-- HEADER -->
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="logo">✈ FlyEase</div>
-      <nav class="site-nav">
-        <a href="#home">Home</a>
-        <a href="#book">Book</a>
-        <a href="#schedule">Schedules</a>
-        <a href="#destinations">Destinations</a>
-        <a href="#portal">Passenger Portal</a>
-        <a href="#checkin" class="Check-in">Check-in</a>
-      </nav>
-      <!-- menu button -->
-      <button class="menubutton" id="menubutton">☰</button>
-    </div>
-  </header>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">✈ FlyEase</div>
+    <nav class="site-nav hidden" id="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#book">Book</a>
+      <a href="#schedule">Schedules</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#portal">Passenger Portal</a>
+      <a href="#checkin" class="Check-in">Check-in</a>
+    </nav>
+
+    <!-- menu button -->
+    <button class="menubutton" id="menubutton">☰</button>
+  </div>
+</header>
+
 
   <!-- HERO -->
   <section id="home" class="hero full-hero">
@@ -101,64 +103,119 @@
     </div>
   </section>
 
-  <!-- SCHEDULE -->
-  <section id="schedule" class="full-section">
-    <div class="container">
-      <h2>Flight Schedules</h2>
-      <p>Check upcoming flights and timings</p>
-      <table class="schedule-table">
-        <thead>
-          <tr>
-            <th>Flight No</th>
-            <th>From</th>
-            <th>To</th>
-            <th>Departure</th>
-            <th>Arrival</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>AI-202</td>
-            <td>Delhi</td>
-            <td>Mumbai</td>
-            <td>07:30</td>
-            <td>09:35</td>
-            <td>On Time</td>
-          </tr>
-          <tr>
-            <td>SG-110</td>
-            <td>Bangalore</td>
-            <td>Kolkata</td>
-            <td>10:15</td>
-            <td>13:20</td>
-            <td>Delayed</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+<!-- SCHEDULE -->
+<section id="schedule" class="full-section">
+  <div class="container">
+    <h2>Flight Schedules</h2>
+    <p>Check upcoming flights and timings</p>
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>Flight No</th>
+          <th>From</th>
+          <th>To</th>
+          <th>Departure</th>
+          <th>Arrival</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AI-202</td>
+          <td>Delhi</td>
+          <td>Mumbai</td>
+          <td>07:30</td>
+          <td>09:35</td>
+          <td><span class="status on-time">On Time</span></td>
+        </tr>
+        <tr>
+          <td>SG-110</td>
+          <td>Bangalore</td>
+          <td>Kolkata</td>
+          <td>10:15</td>
+          <td>13:20</td>
+          <td><span class="status delayed">Delayed</span></td>
+        </tr>
+        <tr>
+          <td>EK-505</td>
+          <td>Mumbai</td>
+          <td>Dubai</td>
+          <td>14:00</td>
+          <td>16:30</td>
+          <td><span class="status on-time">On Time</span></td>
+        </tr>
+        <tr>
+          <td>BA-256</td>
+          <td>Delhi</td>
+          <td>London</td>
+          <td>02:45</td>
+          <td>07:15</td>
+          <td><span class="status on-time">On Time</span></td>
+        </tr>
+        <tr>
+          <td>UA-837</td>
+          <td>Delhi</td>
+          <td>San Francisco</td>
+          <td>23:55</td>
+          <td>06:45 (+1)</td>
+          <td><span class="status on-time">On Time</span></td>
+        </tr>
+        <tr>
+          <td>JL-740</td>
+          <td>Bangalore</td>
+          <td>Tokyo</td>
+          <td>11:20</td>
+          <td>22:30</td>
+          <td><span class="status cancelled">Cancelled</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
 
   <!-- DESTINATIONS -->
-  <section id="destinations" class="full-section transparent-bg">
-    <div class="container">
-      <h2>Popular Destinations</h2>
-      <div class="tiles">
-        <div class="tile">
-          <img src="assets/paris.jpg" alt="Paris">
-          <div class="caption">Paris</div>
-        </div>
-        <div class="tile">
-          <img src="assets/newyork.jpg" alt="New York">
-          <div class="caption">New York</div>
-        </div>
-        <div class="tile">
-          <img src="assets/tokyo.jpg" alt="Tokyo">
-          <div class="caption">Tokyo</div>
-        </div>
+<section id="destinations" class="full-section">
+  <div class="container">
+    <h2 class="section-title">Popular Destinations</h2>
+    <div class="tiles">
+      <div class="tile">
+        <img src="assets/paris.jpg" alt="Paris">
+        <div class="caption">Paris</div>
+      </div>
+      <div class="tile">
+        <img src="assets/newyork.jpg" alt="New York">
+        <div class="caption">New York</div>
+      </div>
+      <div class="tile">
+        <img src="assets/tokyo.jpg" alt="Tokyo">
+        <div class="caption">Tokyo</div>
+      </div>
+      <div class="tile">
+        <img src="assets/london.jpg" alt="London">
+        <div class="caption">London</div>
+      </div>
+      <div class="tile">
+        <img src="assets/dubai.jpg" alt="Dubai">
+        <div class="caption">Dubai</div>
+      </div>
+      <div class="tile">
+        <img src="assets/sydney.jpg" alt="Sydney">
+        <div class="caption">Sydney</div>
+      </div>
+      <div class="tile">
+        <img src="assets/singapore.jpg" alt="Singapore">
+        <div class="caption">Singapore</div>
+      </div>
+      <div class="tile">
+        <img src="assets/rome.jpg" alt="Rome">
+        <div class="caption">Rome</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <!-- PASSENGER PORTAL -->
   <section id="portal" class="full-section">
@@ -204,6 +261,5 @@
       </nav>
     </div>
   </footer>
-
 </body>
 </html>
