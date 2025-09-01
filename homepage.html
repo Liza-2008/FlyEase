@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="homepage.css">
 </head>
 <body>
@@ -42,20 +43,18 @@
     </div>
   </section>
 
-  <!-- WHY FLYEASE + BOOKING -->
+  <!--BOOKING -->
   <section id="book" class="full-section transparent-bg">
     <div class="container book-grid">
       
-      <!-- Left Content -->
-      <div class="book-info">
-        <h2>Why FlyEase?</h2>
-        <p>
-          ✈ FlyEase makes air travel simple and convenient.<br><br>
-          From <b>easy bookings</b> to <b>real-time updates</b>,  
-          we ensure comfort, punctuality, and a seamless flying experience.<br><br>
-          Travel smarter. Travel with FlyEase.
-        </p>
-      </div>
+     <!-- Left Content -->
+<div class="book-info">
+  <h2>Travel Smarter. Travel FlyEase.</h2>
+  <p>
+    From easy bookings to real-time updates, FlyEase ensures comfort, punctuality, 
+    and a seamless flying experience — so you can focus on the adventure, not the hassle.
+  </p>
+</div>
 
       <!-- Right Content -->
       <div class="book-form">
@@ -108,68 +107,71 @@
   <div class="container">
     <h2>Flight Schedules</h2>
     <p>Check upcoming flights and timings</p>
-    <table class="schedule-table">
-      <thead>
-        <tr>
-          <th>Flight No</th>
-          <th>From</th>
-          <th>To</th>
-          <th>Departure</th>
-          <th>Arrival</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>AI-202</td>
-          <td>Delhi</td>
-          <td>Mumbai</td>
-          <td>07:30</td>
-          <td>09:35</td>
-          <td><span class="status on-time">On Time</span></td>
-        </tr>
-        <tr>
-          <td>SG-110</td>
-          <td>Bangalore</td>
-          <td>Kolkata</td>
-          <td>10:15</td>
-          <td>13:20</td>
-          <td><span class="status delayed">Delayed</span></td>
-        </tr>
-        <tr>
-          <td>EK-505</td>
-          <td>Mumbai</td>
-          <td>Dubai</td>
-          <td>14:00</td>
-          <td>16:30</td>
-          <td><span class="status on-time">On Time</span></td>
-        </tr>
-        <tr>
-          <td>BA-256</td>
-          <td>Delhi</td>
-          <td>London</td>
-          <td>02:45</td>
-          <td>07:15</td>
-          <td><span class="status on-time">On Time</span></td>
-        </tr>
-        <tr>
-          <td>UA-837</td>
-          <td>Delhi</td>
-          <td>San Francisco</td>
-          <td>23:55</td>
-          <td>06:45 (+1)</td>
-          <td><span class="status on-time">On Time</span></td>
-        </tr>
-        <tr>
-          <td>JL-740</td>
-          <td>Bangalore</td>
-          <td>Tokyo</td>
-          <td>11:20</td>
-          <td>22:30</td>
-          <td><span class="status cancelled">Cancelled</span></td>
-        </tr>
-      </tbody>
-    </table>
+
+    <div class="schedule-wrapper">
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Flight No</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Departure</th>
+            <th>Arrival</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Flight No">AI-202</td>
+            <td data-label="From">Delhi</td>
+            <td data-label="To">Mumbai</td>
+            <td data-label="Departure">07:30</td>
+            <td data-label="Arrival">09:35</td>
+            <td data-label="Status"><span class="status on-time">On Time</span></td>
+          </tr>
+          <tr>
+            <td data-label="Flight No">SG-110</td>
+            <td data-label="From">Bangalore</td>
+            <td data-label="To">Kolkata</td>
+            <td data-label="Departure">10:15</td>
+            <td data-label="Arrival">13:20</td>
+            <td data-label="Status"><span class="status delayed">Delayed</span></td>
+          </tr>
+          <tr>
+            <td data-label="Flight No">EK-505</td>
+            <td data-label="From">Mumbai</td>
+            <td data-label="To">Dubai</td>
+            <td data-label="Departure">14:00</td>
+            <td data-label="Arrival">16:30</td>
+            <td data-label="Status"><span class="status on-time">On Time</span></td>
+          </tr>
+          <tr>
+            <td data-label="Flight No">BA-256</td>
+            <td data-label="From">Delhi</td>
+            <td data-label="To">London</td>
+            <td data-label="Departure">02:45</td>
+            <td data-label="Arrival">07:15</td>
+            <td data-label="Status"><span class="status on-time">On Time</span></td>
+          </tr>
+          <tr>
+            <td data-label="Flight No">UA-837</td>
+            <td data-label="From">Delhi</td>
+            <td data-label="To">San Francisco</td>
+            <td data-label="Departure">23:55</td>
+            <td data-label="Arrival">06:45 (+1)</td>
+            <td data-label="Status"><span class="status on-time">On Time</span></td>
+          </tr>
+          <tr>
+            <td data-label="Flight No">JL-740</td>
+            <td data-label="From">Bangalore</td>
+            <td data-label="To">Tokyo</td>
+            <td data-label="Departure">11:20</td>
+            <td data-label="Arrival">22:30</td>
+            <td data-label="Status"><span class="status cancelled">Cancelled</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 
@@ -215,8 +217,6 @@
   </div>
 </section>
 
-
-
   <!-- PASSENGER PORTAL -->
   <section id="portal" class="full-section">
     <div class="container portal-grid">
@@ -233,10 +233,18 @@
   </section>
 
   <!-- CHECK-IN -->
-  <section id="checkin" class="full-section transparent-bg">
-    <div class="container">
+<section id="checkin" class="checkin-section">
+  <div class="boarding-pass">
+    <!-- Left side (Boarding Pass Design / Branding) -->
+    <div class="boarding-left">
+      <h3>FlyEase Check-in</h3>
+      <p>Your journey, simplified.</p>
+    </div>
+
+    <!-- Right side (Check-in Form) -->
+    <div class="boarding-right">
       <h2>Online Check-in</h2>
-      <form class="stack-form">
+      <form class="checkin-form">
         <div class="field">
           <label>Booking Reference</label>
           <input type="text" placeholder="Enter PNR / Booking ID">
@@ -248,7 +256,8 @@
         <button class="btn primary">Proceed to Check-in</button>
       </form>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer>
